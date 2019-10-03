@@ -1,5 +1,5 @@
 //
-//  PersonViewCell.swift
+//  PersonTableViewCell.swift
 //  advanceAppIOS
 //
 //  Created by Dev2 on 03/10/2019.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class PersonViewCell: UITableViewCell {
-    static let cellIdentifier = String(describing: PersonViewCell.self)
+class PersonTableViewCell: UITableViewCell {
+    static let cellIdentifier = String(describing: PersonTableViewCell.self)
 
     @IBOutlet weak var mView: UIView!
     @IBOutlet weak var mImage: UIImageView!

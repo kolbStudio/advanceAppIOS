@@ -14,7 +14,22 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OgV-HQ-IvC">
+                                <rect key="frame" x="132" y="214" width="151" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="iVD-f6-SZd"/>
+                                    <constraint firstAttribute="width" secondItem="OgV-HQ-IvC" secondAttribute="height" multiplier="151:150" id="imS-kc-u0U"/>
+                                    <constraint firstAttribute="height" constant="150" id="rtY-yC-gUI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OgV-HQ-IvC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="4iz-Ac-dUJ"/>
+                            <constraint firstItem="OgV-HQ-IvC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="Cyv-to-cF8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OgV-HQ-IvC" secondAttribute="trailing" constant="131" id="qLU-k4-8rc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
