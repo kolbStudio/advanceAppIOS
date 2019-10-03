@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B479F8D81C35017BDE13E4A0 /* Pods_advanceAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CA336A2F1C6B773442871D /* Pods_advanceAppIOS.framework */; };
-		D92D95BA2346588700CBE92C /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92D95B92346588700CBE92C /* User.storyboard */; };
 		D92D95C1234662EE00CBE92C /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D95BF234662EE00CBE92C /* PersonTableViewCell.swift */; };
 		D92D95C2234662EE00CBE92C /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D92D95C0234662EE00CBE92C /* PersonTableViewCell.xib */; };
 		D92D95C72346660F00CBE92C /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D95C62346660F00CBE92C /* UIView+Utils.swift */; };
@@ -29,7 +28,6 @@
 		07FF45B3D9CCD7766B350EE6 /* Pods-advanceAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-advanceAppIOS.release.xcconfig"; path = "Target Support Files/Pods-advanceAppIOS/Pods-advanceAppIOS.release.xcconfig"; sourceTree = "<group>"; };
 		5EE889AA302CF8719F74C44B /* Pods-advanceAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-advanceAppIOS.debug.xcconfig"; path = "Target Support Files/Pods-advanceAppIOS/Pods-advanceAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		98CA336A2F1C6B773442871D /* Pods_advanceAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_advanceAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D92D95B92346588700CBE92C /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
 		D92D95BF234662EE00CBE92C /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		D92D95C0234662EE00CBE92C /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
 		D92D95C62346660F00CBE92C /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 				D9D08BF32346499300F17D4A /* Launch.storyboard */,
 				D98F7FC5234652BC00D7D2EC /* Splash.storyboard */,
 				D9D08BEE2346499100F17D4A /* Main.storyboard */,
-				D92D95B92346588700CBE92C /* User.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -244,7 +241,6 @@
 			files = (
 				D9D08BF52346499300F17D4A /* Launch.storyboard in Resources */,
 				D92D95C2234662EE00CBE92C /* PersonTableViewCell.xib in Resources */,
-				D92D95BA2346588700CBE92C /* User.storyboard in Resources */,
 				D9D08BF22346499300F17D4A /* Assets.xcassets in Resources */,
 				D9D08BF02346499100F17D4A /* Main.storyboard in Resources */,
 				D92D95CD234667BC00CBE92C /* PersonCollectionViewCell.xib in Resources */,
