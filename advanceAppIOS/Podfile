@@ -6,8 +6,10 @@ target 'advanceAppIOS' do
   use_frameworks!
 
   # Pods for advanceAppIOS
-pod 'RealmSwift'
-pod 'Alamofire'
-pod 'Kingfisher'
-pod 'lottie-ios'
+
+pod "Kingfisher"
+pod "Alamofire"
+pod "lottie-ios"
+pod "RealmSwift"
+
 end
