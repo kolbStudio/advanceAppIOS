@@ -1,5 +1,5 @@
 //
-//  nameDTO.swift
+//  NameDTO.swift
 //  advanceAppIOS
 //
 //  Created by Dev2 on 04/10/2019.
@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+
+struct NameDTO: Codable {
+
+    let title, first, last: String?
+
+
+
+
+private enum CodingKeys: String, CodingKeys {
+    case title
+    case first
+    case last
+   
+    }
+}

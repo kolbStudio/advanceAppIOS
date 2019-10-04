@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+struct UsersDTO: Codable {
+    
+    let users: Array<UserDTO>?
+    let info: InfoDTO?
+    
+    private enum CodingKeys: String, CodingKey {
+        case users = "results"
+        case info 
+    }
+}

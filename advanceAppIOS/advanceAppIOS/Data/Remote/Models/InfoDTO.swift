@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+
+struct InfoDTO: Codable {
+    
+    let seed: String?
+    let page: Int?
+    let version: String?
+    let count: Int?
+    
+    
+    
+    private enum CodingKeys: String, CodingKeys {
+        case seed
+        case page
+        case version
+        case count = "results"
+        }
+    }
+

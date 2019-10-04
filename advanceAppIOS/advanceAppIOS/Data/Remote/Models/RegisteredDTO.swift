@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+
+struct RegisteredDTO: Codable {
+
+let date: String?
+let age: Int?
+
+
+
+
+
+private enum CodingKeys: String, CodingKeys {
+    case date
+    case age
+   
+    }
+}

@@ -1,5 +1,5 @@
 //
-//  dobDTO.swift
+//  DobDTO.swift
 //  advanceAppIOS
 //
 //  Created by Dev2 on 04/10/2019.
@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+
+
+struct DobDTO: Codable {
+
+let date: String?
+let age: Int?
+
+
+
+
+
+private enum CodingKeys: String, CodingKeys {
+    case date
+    case age
+   
+    }
+}

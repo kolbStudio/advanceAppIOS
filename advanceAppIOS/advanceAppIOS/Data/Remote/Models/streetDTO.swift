@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+struct LoginDTO: Codable {
+
+let uuid: String?
+let userName: String?
+let password: String?
+let salt: String?
+let md5: String?
+let sha1: String?
+let sha256: String?
+
+
+}

@@ -7,3 +7,28 @@
 //
 
 import Foundation
+
+
+struct LoginDTO: Codable {
+
+let uuid: String?
+let userName: String?
+let password: String?
+let salt: String?
+let md5: String?
+let sha1: String?
+let sha256: String?
+
+
+
+
+private enum CodingKeys: String, CodingKeys {
+    case uuid
+    case userName
+    case password
+    case salt
+    case md5
+    case sha1
+    case sha256
+    }
+}

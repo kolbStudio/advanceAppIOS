@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+struct PictureDTO: Codable {
+
+let large: String?
+let medium: String?
+let thumbnail: String?
+
+
+
+
+
+private enum CodingKeys: String, CodingKeys {
+    case large
+    case medium
+    case thumbnail
+   
+    }
+}
+

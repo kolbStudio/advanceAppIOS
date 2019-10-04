@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+
+
+class DataManager {
+    //MARK: - Singleton declaration
+    static let shared = DataManager()
+    private init() {}
+}
