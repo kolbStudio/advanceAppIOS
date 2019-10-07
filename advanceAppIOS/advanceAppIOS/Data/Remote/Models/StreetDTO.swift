@@ -10,13 +10,8 @@ import Foundation
 
 struct StreetDTO: Codable {
 
-let uuid: String?
-let userName: String?
-let password: String?
-let salt: String?
-let md5: String?
-let sha1: String?
-let sha256: String?
+    let number: Int?
+    let name: String?
 
 
 }
