@@ -12,32 +12,17 @@ import Foundation
 struct UserDTO: Codable {
     
     let gender: String?
-    let name: userNameDTO?
-    let location: locationDTO?
+    let name: NameDTO?
+    let location: LocationDTO?
     let email: String? 
-    //let login: loginDTO?
-    let dob: dobDTO?
-    let registered: dobDTO?
-    let phone: int?
-    let cell: int?
+    let login: LoginDTO?
+    let dob: DobDTO?
+    let registered: DobDTO?
+    let phone: Int?
+    let cell: Int?
     //let id: idDTO?
-    let picture: pictureDTO?
+    let picture: PictureDTO?
     let nat: String?
     
-    
-    
-    
-    private enum CodingKeys: String, CodingKeys {
-            case name
-            case location
-            case email
-            //case login
-            case dob
-            case registered
-            case phone
-            case cell
-            //case id
-            case picture
-            case nat
-    }
 }
+

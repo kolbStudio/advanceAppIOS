@@ -16,10 +16,4 @@ struct NameDTO: Codable {
 
 
 
-private enum CodingKeys: String, CodingKeys {
-    case title
-    case first
-    case last
-   
-    }
 }

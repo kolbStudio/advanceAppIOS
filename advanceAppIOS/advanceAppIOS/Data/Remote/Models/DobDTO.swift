@@ -12,16 +12,7 @@ import Foundation
 
 struct DobDTO: Codable {
 
-let date: String?
+let date: Date?
 let age: Int?
 
-
-
-
-
-private enum CodingKeys: String, CodingKeys {
-    case date
-    case age
-   
-    }
 }

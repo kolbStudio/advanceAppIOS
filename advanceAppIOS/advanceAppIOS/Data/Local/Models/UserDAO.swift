@@ -32,10 +32,32 @@ class UserDAO: Object {
         return "uuid"
     }
                 
-}
-    
-    
-    
-    
-    
 
+convenience init (uuid: String,
+                  avatar: String? = nil,
+                  firstName: String? = nil,
+                  lastName: String? = nil,
+                   email: String? = nil,
+                   gender: String? = nil,
+                   birthdate: Date? = nil,
+                   country: String? = nil,
+                   latitude: String? = nil,
+                   longitude: String? = nil) {
+
+    self.init()
+
+    self.uuid = uuid
+    self.avatar = avatar
+    self.firstName = firstName
+    self.lastName = lastName
+    self.gender = gender
+    self.birthdate = birthdate
+    self.country = country
+    self.latitude  = latitude
+    self.longitude = longitude
+    
+    
+    
+    
+}
+}

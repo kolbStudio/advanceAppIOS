@@ -19,16 +19,4 @@ let md5: String?
 let sha1: String?
 let sha256: String?
 
-
-
-
-private enum CodingKeys: String, CodingKeys {
-    case uuid
-    case userName
-    case password
-    case salt
-    case md5
-    case sha1
-    case sha256
-    }
 }

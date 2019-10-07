@@ -1,5 +1,5 @@
 //
-//  streetDTO.swift
+//  StreetDTO.swift
 //  advanceAppIOS
 //
 //  Created by Dev2 on 04/10/2019.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LoginDTO: Codable {
+struct StreetDTO: Codable {
 
 let uuid: String?
 let userName: String?

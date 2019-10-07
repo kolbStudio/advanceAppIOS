@@ -1,5 +1,5 @@
 //
-//  PictureDTO.swift
+//  CoordinatesDTO.swift
 //  advanceAppIOS
 //
 //  Created by Dev2 on 04/10/2019.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct PictureDTO: Codable {
+struct CoordinatesDTO: Codable {
 
-let large: String?
-let medium: String?
-let thumbnail: String?
+let latitude: String?
+let longitude: String?
+
+
 
 
 }
-

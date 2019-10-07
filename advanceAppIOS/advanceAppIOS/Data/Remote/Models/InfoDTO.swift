@@ -18,7 +18,7 @@ struct InfoDTO: Codable {
     
     
     
-    private enum CodingKeys: String, CodingKeys {
+    private enum CodingKeys: String, CodingKey {
         case seed
         case page
         case version
