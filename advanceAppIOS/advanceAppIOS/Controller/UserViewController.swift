@@ -16,14 +16,28 @@ class UserViewController: UIViewController {
     @IBOutlet weak var segmentOption: UISegmentedControl!
     // MARK: - Properties
     private var cellSpacing: CGFloat = 16.0
+    private var userList: Array<User> = []
+    
     
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Get Users from DataBase
+        DataManager.shared.users() {[weak self] result in
+            switch result {
+            case .success(let data):
+                guard let users = data as? Array<User> else{
+                    return
+                }
+                self?.userList = users
+                
+            case .failure(let msg):
+                print("Fallo al obtener usuarios del servicio: \(msg)")
+                
+            }
+        }
     }
 }
-
-
 
 
 
@@ -89,3 +103,4 @@ extension UserViewController: UICollectionViewDelegate, UICollectionViewDataSour
                       height: size)
     }
 }
+

@@ -32,9 +32,7 @@ class User {
         let years = Calendar.current.dateComponents([.year], from: date, to: Date())
         
         return years.year ?? 0
-        
-
-        
+         
     }
     
     
@@ -48,8 +46,6 @@ class User {
     country: String? = nil,
     nationality: String? = nil) {
 
-        
-        
         self.id = id
         self.avatar = avatar
         self.firstName = firstName
