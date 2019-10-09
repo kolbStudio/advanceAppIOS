@@ -39,6 +39,7 @@
 		D9D08BF02346499100F17D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D08BEE2346499100F17D4A /* Main.storyboard */; };
 		D9D08BF22346499300F17D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D08BF12346499300F17D4A /* Assets.xcassets */; };
 		D9D08BF52346499300F17D4A /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D08BF32346499300F17D4A /* Launch.storyboard */; };
+		D9FCEF99234CEE9F00BD6405 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FCEF98234CEE9F00BD6405 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		D9D08BF12346499300F17D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D08BF42346499300F17D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Launch.storyboard; sourceTree = "<group>"; };
 		D9D08BF62346499300F17D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9FCEF98234CEE9F00BD6405 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		D92D95C82346667E00CBE92C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D9FCEF96234CEE7200BD6405 /* Views */,
 				D9B1E7EA2347CC7C003BDE55 /* DataManager.swift */,
 				D9B1E7D22347BEE4003BDE55 /* Remote */,
 				D9B1E7CE2347B66F003BDE55 /* Local */,
@@ -260,6 +263,22 @@
 				D98F7FC7234652D000D7D2EC /* UI */,
 			);
 			path = advanceAppIOS;
+			sourceTree = "<group>";
+		};
+		D9FCEF96234CEE7200BD6405 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9FCEF97234CEE8200BD6405 /* Models */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9FCEF97234CEE8200BD6405 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9FCEF98234CEE9F00BD6405 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +403,7 @@
 				D9B1E7DB2347C4C9003BDE55 /* NameDTO.swift in Sources */,
 				D9D08BED2346499000F17D4A /* ViewController.swift in Sources */,
 				D98F7FBE2346514300D7D2EC /* UserViewController.swift in Sources */,
+				D9FCEF99234CEE9F00BD6405 /* User.swift in Sources */,
 				D9B1E7D72347C108003BDE55 /* InfoDTO.swift in Sources */,
 				D92D95C72346660F00CBE92C /* UIView+Utils.swift in Sources */,
 				D99BBEE6234B891E00556BD6 /* DatabaseManager.swift in Sources */,

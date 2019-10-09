@@ -17,11 +17,15 @@ class UserViewController: UIViewController {
     // MARK: - Properties
     private var cellSpacing: CGFloat = 16.0
     
-    
+    // MARK: - Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
+
+
+
+
 
 // MARK: - Extension TableView methods
 extension UserViewController: UITableViewDataSource, UITableViewDelegate {

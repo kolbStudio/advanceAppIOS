@@ -26,6 +26,7 @@ class UserDAO: Object {
     @objc dynamic var avatar : String?
     @objc dynamic var latitude : String?
     @objc dynamic var longitude : String?
+    @objc dynamic var nationality : String?
  
     
     override static func primaryKey() -> String? {
@@ -42,7 +43,8 @@ convenience init (uuid: String,
                    birthdate: Date? = nil,
                    country: String? = nil,
                    latitude: String? = nil,
-                   longitude: String? = nil) {
+                   longitude: String? = nil,
+                   nationality: String? = nil) {
 
     self.init()
 
@@ -55,6 +57,7 @@ convenience init (uuid: String,
     self.country = country
     self.latitude  = latitude
     self.longitude = longitude
+    self.nationality = nationality
     
     
     
