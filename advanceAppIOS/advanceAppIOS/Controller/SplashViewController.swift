@@ -21,7 +21,7 @@ class SplashViewController: UIViewController {
     }
         
     func playAnimation() {
-        let animationView = AnimationView (name: "lottie_ripple")
+        let animationView = AnimationView (name: "lottie_charge")
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = .loop
         animationView.frame = mViewLoading.bounds

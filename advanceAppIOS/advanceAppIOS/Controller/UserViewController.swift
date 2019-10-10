@@ -23,6 +23,10 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Get Users from DataBase
+        loadUser()
+    }
+    private func loadUser(){
+        
         DataManager.shared.users() {[weak self] result in
             switch result {
             case .success(let data):
@@ -32,7 +36,8 @@ class UserViewController: UIViewController {
                 self?.userList = users
                 
             case .failure(let msg):
-                print("Fallo al obtener usuarios del servicio: \(msg)")
+                print(msg)
+                
                 
             }
         }
@@ -51,7 +56,7 @@ extension UserViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return userList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -76,7 +81,7 @@ extension UserViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return userList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -13,7 +13,6 @@
 		D92D95C72346660F00CBE92C /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D95C62346660F00CBE92C /* UIView+Utils.swift */; };
 		D92D95CC234667BC00CBE92C /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D95CA234667BC00CBE92C /* PersonCollectionViewCell.swift */; };
 		D92D95CD234667BC00CBE92C /* PersonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D92D95CB234667BC00CBE92C /* PersonCollectionViewCell.xib */; };
-		D980F02C234798590028C9E4 /* lottie_ripple.json in Resources */ = {isa = PBXBuildFile; fileRef = D980F02B234798590028C9E4 /* lottie_ripple.json */; };
 		D98F7FBE2346514300D7D2EC /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F7FBD2346514300D7D2EC /* UserViewController.swift */; };
 		D98F7FC6234652BC00D7D2EC /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98F7FC5234652BC00D7D2EC /* Splash.storyboard */; };
 		D98F7FCB234653A200D7D2EC /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F7FCA234653A200D7D2EC /* SplashViewController.swift */; };
@@ -33,6 +32,8 @@
 		D9B1E7E72347C90B003BDE55 /* PictureDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B1E7E62347C90B003BDE55 /* PictureDTO.swift */; };
 		D9B1E7E92347CB18003BDE55 /* StreetDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B1E7E82347CB18003BDE55 /* StreetDTO.swift */; };
 		D9B1E7EB2347CC7C003BDE55 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B1E7EA2347CC7C003BDE55 /* DataManager.swift */; };
+		D9BADE0A234E3F3D00238196 /* lottie_charge.json in Resources */ = {isa = PBXBuildFile; fileRef = D9BADE09234E3F3D00238196 /* lottie_charge.json */; };
+		D9BADE0D234E543600238196 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = D9BADE0C234E543600238196 /* users.json */; };
 		D9D08BE92346499000F17D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D08BE82346499000F17D4A /* AppDelegate.swift */; };
 		D9D08BEB2346499000F17D4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D08BEA2346499000F17D4A /* SceneDelegate.swift */; };
 		D9D08BED2346499000F17D4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D08BEC2346499000F17D4A /* ViewController.swift */; };
@@ -51,7 +52,6 @@
 		D92D95C62346660F00CBE92C /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
 		D92D95CA234667BC00CBE92C /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
 		D92D95CB234667BC00CBE92C /* PersonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionViewCell.xib; sourceTree = "<group>"; };
-		D980F02B234798590028C9E4 /* lottie_ripple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_ripple.json; sourceTree = "<group>"; };
 		D98F7FBD2346514300D7D2EC /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		D98F7FC5234652BC00D7D2EC /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		D98F7FCA234653A200D7D2EC /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +71,8 @@
 		D9B1E7E62347C90B003BDE55 /* PictureDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDTO.swift; sourceTree = "<group>"; };
 		D9B1E7E82347CB18003BDE55 /* StreetDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetDTO.swift; sourceTree = "<group>"; };
 		D9B1E7EA2347CC7C003BDE55 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D9BADE09234E3F3D00238196 /* lottie_charge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_charge.json; sourceTree = "<group>"; };
+		D9BADE0C234E543600238196 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		D9D08BE52346499000F17D4A /* advanceAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = advanceAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D08BE82346499000F17D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9D08BEA2346499000F17D4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,7 +127,8 @@
 		D92D95C42346633B00CBE92C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D980F02B234798590028C9E4 /* lottie_ripple.json */,
+				D9BADE0C234E543600238196 /* users.json */,
+				D9BADE09234E3F3D00238196 /* lottie_charge.json */,
 				D9D08BF12346499300F17D4A /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -346,8 +349,9 @@
 				D9D08BF22346499300F17D4A /* Assets.xcassets in Resources */,
 				D9D08BF02346499100F17D4A /* Main.storyboard in Resources */,
 				D92D95CD234667BC00CBE92C /* PersonCollectionViewCell.xib in Resources */,
-				D980F02C234798590028C9E4 /* lottie_ripple.json in Resources */,
+				D9BADE0D234E543600238196 /* users.json in Resources */,
 				D98F7FC6234652BC00D7D2EC /* Splash.storyboard in Resources */,
+				D9BADE0A234E3F3D00238196 /* lottie_charge.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +572,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EE889AA302CF8719F74C44B /* Pods-advanceAppIOS.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = ic_mad;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7ZSJKW89DB;
 				INFOPLIST_FILE = advanceAppIOS/Info.plist;
@@ -587,7 +591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 07FF45B3D9CCD7766B350EE6 /* Pods-advanceAppIOS.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = ic_mad;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7ZSJKW89DB;
 				INFOPLIST_FILE = advanceAppIOS/Info.plist;
