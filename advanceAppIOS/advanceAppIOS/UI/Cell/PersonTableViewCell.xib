@@ -66,8 +66,8 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="mImage" destination="5sI-p7-tvV" id="cP1-R2-xgM"/>
-                <outlet property="mLabelEmail" destination="hya-3m-bPM" id="Tf2-pR-JNs"/>
-                <outlet property="mLabelName" destination="9cJ-Ua-X38" id="l8D-co-S0f"/>
+                <outlet property="mLabelEmail" destination="hya-3m-bPM" id="eqO-oH-YPQ"/>
+                <outlet property="mLabelName" destination="9cJ-Ua-X38" id="b70-0a-fmM"/>
                 <outlet property="mView" destination="7er-Ub-1ci" id="bEz-Wq-xCg"/>
             </connections>
             <point key="canvasLocation" x="142" y="44"/>

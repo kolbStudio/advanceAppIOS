@@ -13,7 +13,7 @@ struct LocationDTO: Codable {
     
     let city: String?
     let coordinates: CoordinatesDTO?
-    let street: String?
+    let street: StreetDTO?
     let state: String?
     let country: String?
     //let postCode: Int?

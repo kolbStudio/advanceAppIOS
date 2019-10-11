@@ -31,7 +31,7 @@ class ApiManager {
     
     private func testLoadUsersJson() -> UsersDTO? {
         // Llamar al servicio
-        if let path = Bundle.main.path(forResource: "user", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "users", ofType: "json") {
             do {
                 let jsonData = try Data(contentsOf: URL(fileURLWithPath: path))
                 let decoder = JSONDecoder()
@@ -61,15 +61,15 @@ class ApiManager {
             
             completion(.success(data: users))
         }
-            else{
-                
-                completion(.failure(msg: "Error User File"))
-            }
+        else{
             
+            completion(.failure(msg: "Error User File"))
         }
         
-        
-        
+    }
+    
+    
+    
 }
 
 

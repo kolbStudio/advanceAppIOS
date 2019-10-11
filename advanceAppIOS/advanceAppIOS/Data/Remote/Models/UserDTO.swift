@@ -18,8 +18,8 @@ struct UserDTO: Codable {
     let login: LoginDTO?
     let dob: DobDTO?
     let registered: DobDTO?
-    let phone: Int?
-    let cell: Int?
+    let phone: String?
+    let cell: String?
     //let id: idDTO?
     let picture: PictureDTO?
     let nat: String?

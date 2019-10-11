@@ -65,6 +65,8 @@
                 <connections>
                     <outlet property="mImage" destination="G0l-xs-gNP" id="y0C-SU-tJV"/>
                     <outlet property="mLabelName" destination="nQR-FG-hTR" id="5oq-IW-cMu"/>
+                    <outlet property="mView" destination="Srb-fO-7hW" id="FzR-2A-kyQ"/>
+                    <outlet property="mViewFooter" destination="WNk-ys-zcb" id="YVc-TZ-tAa"/>
                 </connections>
             </collectionViewCellContentView>
             <size key="customSize" width="150" height="150"/>
