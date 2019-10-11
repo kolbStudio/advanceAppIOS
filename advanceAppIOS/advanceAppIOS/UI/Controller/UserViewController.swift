@@ -29,7 +29,11 @@ class UserViewController: UIViewController {
             collectionView.isHidden = false
             collectionView.reloadData()
         }
+        
+        
     }
+    
+   
     
     // MARK: - Properties
     private var cellSpacing: CGFloat = 16.0
@@ -47,7 +51,7 @@ class UserViewController: UIViewController {
     
     private func loadUser(){
         
-        DataManager.shared.users() {[weak self] result in
+        DataManager.shared.usersForceUpdate() {[weak self] result in
             switch result {
             case .success(let data):
                 guard let users = data as? Array<User> else{
@@ -81,6 +85,8 @@ extension UserViewController: UITableViewDataSource, UITableViewDelegate {
     func configure(tableView: UITableView) {
         tableView.register(UINib(nibName: PersonTableViewCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: PersonTableViewCell.cellIdentifier)
         
+        self.tableView.contentInset = UIEdgeInsets(top: segmentOption.frame.origin.y + segmentOption.bounds.height, left: 0, bottom: 0, right: 0)
+        
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -113,6 +119,8 @@ extension UserViewController: UICollectionViewDelegate, UICollectionViewDataSour
     /// Configure collectionView with default options
     func configure(collectionView: UICollectionView) {
         collectionView.register(UINib(nibName: PersonCollectionViewCell.cellIdentifier, bundle: nil), forCellWithReuseIdentifier: PersonCollectionViewCell.cellIdentifier)
+        
+        self.collectionView.contentInset = UIEdgeInsets(top: segmentOption.frame.origin.y + segmentOption.bounds.height, left: 0, bottom: 0, right: 0)
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -149,4 +157,5 @@ extension UserViewController: UICollectionViewDelegate, UICollectionViewDataSour
                       height: size)
     }
 }
+
 

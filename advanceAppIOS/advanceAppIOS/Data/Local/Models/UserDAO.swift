@@ -52,6 +52,7 @@ convenience init (uuid: String,
     self.avatar = avatar
     self.firstName = firstName
     self.lastName = lastName
+    self.email = email
     self.gender = gender
     self.birthdate = birthdate
     self.country = country
