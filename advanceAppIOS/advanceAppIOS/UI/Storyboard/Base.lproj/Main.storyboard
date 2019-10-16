@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--User View Controller-->
+        <!--Users View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="overFullScreen" id="BYZ-38-t0r" customClass="UserViewController" customModule="advanceAppIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overFullScreen" id="BYZ-38-t0r" customClass="UsersViewController" customModule="advanceAppIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,7 @@
                                     <segment title="" image="table" catalog="system"/>
                                 </segments>
                                 <connections>
-                                    <action selector="onListPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="ysC-80-MH6"/>
+                                    <action selector="onListTypePressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="kZN-nQ-x1G"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
@@ -71,9 +71,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="Xkm-j9-dWd" id="Nje-Ec-bf9"/>
-                        <outlet property="segmentOption" destination="IFr-2A-2Qt" id="WBx-e9-3t3"/>
-                        <outlet property="tableView" destination="HIK-BB-l9u" id="KhY-SJ-dvN"/>
+                        <outlet property="collectionView" destination="Xkm-j9-dWd" id="ev6-Tr-3r3"/>
+                        <outlet property="segmentOptions" destination="IFr-2A-2Qt" id="EfR-19-HSX"/>
+                        <outlet property="tableView" destination="HIK-BB-l9u" id="slc-re-1YT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

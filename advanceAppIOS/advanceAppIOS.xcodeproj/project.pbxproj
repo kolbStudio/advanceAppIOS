@@ -13,7 +13,7 @@
 		D92D95C72346660F00CBE92C /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D95C62346660F00CBE92C /* UIView+Utils.swift */; };
 		D92D95CC234667BC00CBE92C /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D95CA234667BC00CBE92C /* PersonCollectionViewCell.swift */; };
 		D92D95CD234667BC00CBE92C /* PersonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D92D95CB234667BC00CBE92C /* PersonCollectionViewCell.xib */; };
-		D93B42EA2351056F006F2007 /* ChargeUsersDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B42E92351056F006F2007 /* ChargeUsersDefault.swift */; };
+		D98452542356286D00A23167 /* IdDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98452532356286D00A23167 /* IdDTO.swift */; };
 		D98F7FBE2346514300D7D2EC /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F7FBD2346514300D7D2EC /* UserViewController.swift */; };
 		D98F7FC6234652BC00D7D2EC /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98F7FC5234652BC00D7D2EC /* Splash.storyboard */; };
 		D98F7FCB234653A200D7D2EC /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F7FCA234653A200D7D2EC /* SplashViewController.swift */; };
@@ -52,7 +52,7 @@
 		D92D95C62346660F00CBE92C /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
 		D92D95CA234667BC00CBE92C /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
 		D92D95CB234667BC00CBE92C /* PersonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionViewCell.xib; sourceTree = "<group>"; };
-		D93B42E92351056F006F2007 /* ChargeUsersDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeUsersDefault.swift; sourceTree = "<group>"; };
+		D98452532356286D00A23167 /* IdDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdDTO.swift; sourceTree = "<group>"; };
 		D98F7FBD2346514300D7D2EC /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		D98F7FC5234652BC00D7D2EC /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		D98F7FCA234653A200D7D2EC /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 		D92D95C42346633B00CBE92C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D9BADE0C234E543600238196 /* users.json */,
 				D9BADE09234E3F3D00238196 /* lottie_charge.json */,
+				D9BADE0C234E543600238196 /* users.json */,
 				D9D08BF12346499300F17D4A /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -158,7 +158,6 @@
 			children = (
 				D98F7FCA234653A200D7D2EC /* SplashViewController.swift */,
 				D98F7FBD2346514300D7D2EC /* UserViewController.swift */,
-				D93B42E92351056F006F2007 /* ChargeUsersDefault.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,15 +223,16 @@
 				D9B1E7D42347BF2D003BDE55 /* UsersDTO.swift */,
 				D9B1E7D62347C108003BDE55 /* InfoDTO.swift */,
 				D9B1E7D82347C26D003BDE55 /* UserDTO.swift */,
+				D9B1E7E22347C827003BDE55 /* DobDTO.swift */,
 				D99BBEE3234B835B00556BD6 /* TimezoneDTO.swift */,
 				D9B1E7DA2347C4C9003BDE55 /* NameDTO.swift */,
-				D9B1E7DC2347C587003BDE55 /* LocationDTO.swift */,
-				D9B1E7DE2347C67B003BDE55 /* CoordinatesDTO.swift */,
-				D9B1E7E02347C71F003BDE55 /* LoginDTO.swift */,
-				D9B1E7E22347C827003BDE55 /* DobDTO.swift */,
-				D9B1E7E42347C8BF003BDE55 /* RegisteredDTO.swift */,
 				D9B1E7E62347C90B003BDE55 /* PictureDTO.swift */,
+				D9B1E7DE2347C67B003BDE55 /* CoordinatesDTO.swift */,
+				D9B1E7DC2347C587003BDE55 /* LocationDTO.swift */,
+				D9B1E7E02347C71F003BDE55 /* LoginDTO.swift */,
+				D9B1E7E42347C8BF003BDE55 /* RegisteredDTO.swift */,
 				D9B1E7E82347CB18003BDE55 /* StreetDTO.swift */,
+				D98452532356286D00A23167 /* IdDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,10 +259,10 @@
 			isa = PBXGroup;
 			children = (
 				D9D08BF62346499300F17D4A /* Info.plist */,
-				D92D95C82346667E00CBE92C /* Data */,
-				D92D95C5234665D400CBE92C /* Extensions */,
-				D92D95C42346633B00CBE92C /* Resources */,
 				D98F7FC92346532200D7D2EC /* App */,
+				D92D95C42346633B00CBE92C /* Resources */,
+				D92D95C5234665D400CBE92C /* Extensions */,
+				D92D95C82346667E00CBE92C /* Data */,
 				D98F7FC7234652D000D7D2EC /* UI */,
 			);
 			path = advanceAppIOS;
@@ -406,13 +406,13 @@
 			files = (
 				D9B1E7DB2347C4C9003BDE55 /* NameDTO.swift in Sources */,
 				D98F7FBE2346514300D7D2EC /* UserViewController.swift in Sources */,
+				D98452542356286D00A23167 /* IdDTO.swift in Sources */,
 				D9FCEF99234CEE9F00BD6405 /* User.swift in Sources */,
 				D9B1E7D72347C108003BDE55 /* InfoDTO.swift in Sources */,
 				D92D95C72346660F00CBE92C /* UIView+Utils.swift in Sources */,
 				D99BBEE6234B891E00556BD6 /* DatabaseManager.swift in Sources */,
 				D9B1E7E72347C90B003BDE55 /* PictureDTO.swift in Sources */,
 				D9D08BE92346499000F17D4A /* AppDelegate.swift in Sources */,
-				D93B42EA2351056F006F2007 /* ChargeUsersDefault.swift in Sources */,
 				D9B1E7D12347B699003BDE55 /* UserDAO.swift in Sources */,
 				D9B1E7E92347CB18003BDE55 /* StreetDTO.swift in Sources */,
 				D9B1E7D92347C26D003BDE55 /* UserDTO.swift in Sources */,

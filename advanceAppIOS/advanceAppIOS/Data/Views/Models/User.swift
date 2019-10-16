@@ -10,14 +10,13 @@ import Foundation
 
 
 class User {
-    
     let id: String
     let avatar: String?
     let firstName: String?
     let lastName: String?
     let email: String?
-    let country: String?
     let birthdate: Date?
+    let country: String?
     let nationality: String?
     
     var name: String {
@@ -26,34 +25,26 @@ class User {
             userName += userFirstName
         }
         
-        
         if let userLastName = lastName {
-            userName += (userName.count > 0 ? " \(userLastName)":userLastName)
+            userName += (userName.count > 0 ? " \(userLastName)": userLastName)
         }
-        return"\(userName)"
+        
+        return "\(userName)"
     }
     
     var age: Int {
-        
-        guard let date = birthdate else {
+        guard let date = birthdate,
+              let yearAge = Calendar.current.dateComponents([.year],
+                                                                  from: date, to: Date()).year else {
             return 0
         }
-        let years = Calendar.current.dateComponents([.year], from: date, to: Date())
         
-        return years.year ?? 0
-        
+        return yearAge
     }
     
     
-    init(
-        id: String,
-        avatar: String? = nil,
-        firstName: String? = nil,
-        lastName: String? = nil,
-        email: String? = nil,
-        birthdate: Date? = nil,
-        country: String? = nil,
-        nationality: String? = nil) {
+    
+    init(id: String, avatar: String? = nil, firstName: String? = nil, lastName: String? = nil, email: String? = nil, birthdate: Date? = nil, country: String? = nil, nationality: String? = nil) {
         
         self.id = id
         self.avatar = avatar
@@ -65,7 +56,4 @@ class User {
         self.nationality = nationality
     }
     
-    
-    
 }
-

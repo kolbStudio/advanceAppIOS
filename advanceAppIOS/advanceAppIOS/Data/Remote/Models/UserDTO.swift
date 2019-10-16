@@ -10,19 +10,19 @@ import Foundation
 
 
 struct UserDTO: Codable {
-    
     let gender: String?
     let name: NameDTO?
-    let location: LocationDTO?
-    let email: String? 
-    let login: LoginDTO?
+    let email: String?
     let dob: DobDTO?
     let registered: DobDTO?
     let phone: String?
     let cell: String?
-    //let id: idDTO?
     let picture: PictureDTO?
     let nat: String?
-    
-}
+    let location: LocationDTO?
 
+    // Hide because service return some
+    // errors with this data
+    let id: IdDTO?
+    let login: LoginDTO?
+}

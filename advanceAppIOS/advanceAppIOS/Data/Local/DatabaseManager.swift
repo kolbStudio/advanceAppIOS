@@ -5,21 +5,28 @@
 //  Created by Dev2 on 07/10/2019.
 //  Copyright © 2019 kolbStudio. All rights reserved.
 //
-
 import Foundation
 import RealmSwift
 
 
 class DatabaseManager {
-    //MARK: - Singleton declaration
+    // MARK: - Singleton declaration
     static let shared = DatabaseManager()
     private init() {}
-    
 
-    //MARK: - Singleton declaration
+    // MARK: - Properties
     // Get the default Realm database
-    
-    private let realm = try! Realm()
+    private var realm: Realm {
+        return try! Realm()
+    }
+}
+
+
+// MARK: - Realm
+extension DatabaseManager {
+    var users: Results<UserDAO> {
+        return realm.objects(UserDAO.self)
+    }
     
     func save(user: UserDAO) {
         try! realm.write {
@@ -28,29 +35,36 @@ class DatabaseManager {
         }
     }
     
-    func users() -> Results<UserDAO> {
-        
-        return realm.objects(UserDAO.self)
-        
-    }
-    
     func user(by id: String) -> UserDAO? {
-        
-         return realm.object(ofType: UserDAO.self, forPrimaryKey: id)
-        
-        
+        return realm.object(ofType: UserDAO.self,
+                            forPrimaryKey: id)
     }
     
     func deleteAll() {
-        
-        try! realm.write{
-        realm.deleteAll()
+        try! realm.write {
+            realm.deleteAll()
         }
     }
+    
     func delete(user: UserDAO) {
-        try! realm.write{
-        realm.delete(user)
+        try! realm.write {
+            realm.delete(user)
+        }
     }
-  }
+}
 
+// MARK: - UserDefaults
+extension DatabaseManager {
+    var KEY_OPTION_SELECTED: String {
+        return "KEY_OPTION_SELECTED"
+    }
+    
+    var optionSelected: Int {
+        return UserDefaults.standard.integer(forKey: KEY_OPTION_SELECTED)
+    }
+    
+    func save(option: Int) {
+        UserDefaults.standard.set(option,
+                                  forKey: KEY_OPTION_SELECTED)
+    }
 }

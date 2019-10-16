@@ -43,7 +43,7 @@
                         <viewLayoutGuide key="safeArea" id="NiV-fZ-lzW"/>
                     </view>
                     <connections>
-                        <outlet property="mViewLoading" destination="dcI-rq-pTr" id="uJg-eo-t1z"/>
+                        <outlet property="mViewLoading" destination="dcI-rq-pTr" id="lUE-rF-467"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gF7-Cc-WX6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
