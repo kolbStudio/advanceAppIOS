@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic.user" translatesAutoresizingMaskIntoConstraints="NO" id="OgV-HQ-IvC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="OgV-HQ-IvC">
                                 <rect key="frame" x="132" y="214" width="151" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="151" id="iVD-f6-SZd"/>
@@ -24,7 +24,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.40347014431529815" green="1" blue="0.97292761844193909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OgV-HQ-IvC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="4iz-Ac-dUJ"/>
                             <constraint firstItem="OgV-HQ-IvC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="Cyv-to-cF8"/>
@@ -39,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic.user" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="icon" width="166.66667175292969" height="166.66667175292969"/>
     </resources>
 </document>

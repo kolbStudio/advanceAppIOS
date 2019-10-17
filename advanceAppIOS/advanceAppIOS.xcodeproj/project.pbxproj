@@ -40,6 +40,16 @@
 		D9D08BF02346499100F17D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D08BEE2346499100F17D4A /* Main.storyboard */; };
 		D9D08BF22346499300F17D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D08BF12346499300F17D4A /* Assets.xcassets */; };
 		D9D08BF52346499300F17D4A /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D08BF32346499300F17D4A /* Launch.storyboard */; };
+		D9ED1C1C23575D80007F6C6D /* UserDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9ED1C1B23575D80007F6C6D /* UserDetails.storyboard */; };
+		D9ED1C1E23576061007F6C6D /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED1C1D23576061007F6C6D /* UserDetailsViewController.swift */; };
+		D9ED1C242357616B007F6C6D /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED1C222357616B007F6C6D /* Map.swift */; };
+		D9ED1C252357616B007F6C6D /* Map.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9ED1C232357616B007F6C6D /* Map.xib */; };
+		D9ED1C2823576448007F6C6D /* PersonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED1C2623576448007F6C6D /* PersonalData.swift */; };
+		D9ED1C2923576448007F6C6D /* PersonalData.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9ED1C2723576448007F6C6D /* PersonalData.xib */; };
+		D9ED1C2C23576484007F6C6D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED1C2A23576484007F6C6D /* Country.swift */; };
+		D9ED1C2D23576484007F6C6D /* Country.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9ED1C2B23576484007F6C6D /* Country.xib */; };
+		D9ED1C30235764A3007F6C6D /* ContactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED1C2E235764A3007F6C6D /* ContactData.swift */; };
+		D9ED1C31235764A3007F6C6D /* ContactData.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9ED1C2F235764A3007F6C6D /* ContactData.xib */; };
 		D9FCEF99234CEE9F00BD6405 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FCEF98234CEE9F00BD6405 /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +91,16 @@
 		D9D08BF12346499300F17D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D08BF42346499300F17D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Launch.storyboard; sourceTree = "<group>"; };
 		D9D08BF62346499300F17D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9ED1C1B23575D80007F6C6D /* UserDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetails.storyboard; sourceTree = "<group>"; };
+		D9ED1C1D23576061007F6C6D /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		D9ED1C222357616B007F6C6D /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		D9ED1C232357616B007F6C6D /* Map.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Map.xib; sourceTree = "<group>"; };
+		D9ED1C2623576448007F6C6D /* PersonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalData.swift; sourceTree = "<group>"; };
+		D9ED1C2723576448007F6C6D /* PersonalData.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalData.xib; sourceTree = "<group>"; };
+		D9ED1C2A23576484007F6C6D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		D9ED1C2B23576484007F6C6D /* Country.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Country.xib; sourceTree = "<group>"; };
+		D9ED1C2E235764A3007F6C6D /* ContactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactData.swift; sourceTree = "<group>"; };
+		D9ED1C2F235764A3007F6C6D /* ContactData.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactData.xib; sourceTree = "<group>"; };
 		D9FCEF98234CEE9F00BD6405 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +140,7 @@
 				D92D95C0234662EE00CBE92C /* PersonTableViewCell.xib */,
 				D92D95CA234667BC00CBE92C /* PersonCollectionViewCell.swift */,
 				D92D95CB234667BC00CBE92C /* PersonCollectionViewCell.xib */,
+				D9ED1C1F2357606B007F6C6D /* UserDetailsCellType */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -158,6 +179,7 @@
 			children = (
 				D98F7FCA234653A200D7D2EC /* SplashViewController.swift */,
 				D98F7FBD2346514300D7D2EC /* UserViewController.swift */,
+				D9ED1C1D23576061007F6C6D /* UserDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +200,7 @@
 				D9D08BF32346499300F17D4A /* Launch.storyboard */,
 				D98F7FC5234652BC00D7D2EC /* Splash.storyboard */,
 				D9D08BEE2346499100F17D4A /* Main.storyboard */,
+				D9ED1C1B23575D80007F6C6D /* UserDetails.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -268,6 +291,21 @@
 			path = advanceAppIOS;
 			sourceTree = "<group>";
 		};
+		D9ED1C1F2357606B007F6C6D /* UserDetailsCellType */ = {
+			isa = PBXGroup;
+			children = (
+				D9ED1C222357616B007F6C6D /* Map.swift */,
+				D9ED1C232357616B007F6C6D /* Map.xib */,
+				D9ED1C2623576448007F6C6D /* PersonalData.swift */,
+				D9ED1C2723576448007F6C6D /* PersonalData.xib */,
+				D9ED1C2A23576484007F6C6D /* Country.swift */,
+				D9ED1C2B23576484007F6C6D /* Country.xib */,
+				D9ED1C2E235764A3007F6C6D /* ContactData.swift */,
+				D9ED1C2F235764A3007F6C6D /* ContactData.xib */,
+			);
+			path = UserDetailsCellType;
+			sourceTree = "<group>";
+		};
 		D9FCEF96234CEE7200BD6405 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,9 +386,14 @@
 				D92D95C2234662EE00CBE92C /* PersonTableViewCell.xib in Resources */,
 				D9D08BF22346499300F17D4A /* Assets.xcassets in Resources */,
 				D9D08BF02346499100F17D4A /* Main.storyboard in Resources */,
+				D9ED1C31235764A3007F6C6D /* ContactData.xib in Resources */,
 				D92D95CD234667BC00CBE92C /* PersonCollectionViewCell.xib in Resources */,
 				D9BADE0D234E543600238196 /* users.json in Resources */,
+				D9ED1C1C23575D80007F6C6D /* UserDetails.storyboard in Resources */,
 				D98F7FC6234652BC00D7D2EC /* Splash.storyboard in Resources */,
+				D9ED1C2D23576484007F6C6D /* Country.xib in Resources */,
+				D9ED1C252357616B007F6C6D /* Map.xib in Resources */,
+				D9ED1C2923576448007F6C6D /* PersonalData.xib in Resources */,
 				D9BADE0A234E3F3D00238196 /* lottie_charge.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,12 +458,17 @@
 				D9D08BE92346499000F17D4A /* AppDelegate.swift in Sources */,
 				D9B1E7D12347B699003BDE55 /* UserDAO.swift in Sources */,
 				D9B1E7E92347CB18003BDE55 /* StreetDTO.swift in Sources */,
+				D9ED1C242357616B007F6C6D /* Map.swift in Sources */,
 				D9B1E7D92347C26D003BDE55 /* UserDTO.swift in Sources */,
 				D99BBEE4234B835B00556BD6 /* TimezoneDTO.swift in Sources */,
+				D9ED1C30235764A3007F6C6D /* ContactData.swift in Sources */,
 				D9B1E7EB2347CC7C003BDE55 /* DataManager.swift in Sources */,
 				D9D08BEB2346499000F17D4A /* SceneDelegate.swift in Sources */,
 				D9B1E7E12347C71F003BDE55 /* LoginDTO.swift in Sources */,
 				D9B1E7DF2347C67B003BDE55 /* CoordinatesDTO.swift in Sources */,
+				D9ED1C1E23576061007F6C6D /* UserDetailsViewController.swift in Sources */,
+				D9ED1C2C23576484007F6C6D /* Country.swift in Sources */,
+				D9ED1C2823576448007F6C6D /* PersonalData.swift in Sources */,
 				D99BBEEA234BAEC200556BD6 /* ApiManager.swift in Sources */,
 				D98F7FCB234653A200D7D2EC /* SplashViewController.swift in Sources */,
 				D9B1E7E32347C827003BDE55 /* DobDTO.swift in Sources */,

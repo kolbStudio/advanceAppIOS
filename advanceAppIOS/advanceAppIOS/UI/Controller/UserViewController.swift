@@ -42,9 +42,36 @@ class UsersViewController: UIViewController {
         configure(collectionView: collectionView)
         
         loadOptionSelected()
-        loadUsers()
+//        loadUsers()
+//        prepare()
     }
     
+    
+//        extension func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            guard let destination = segue.destination as? UserDetailsViewController,
+//                  let cell = sender as? UITableViewCell,
+//                  let indexPath = tableView.indexPath(for: cell)
+//                else {
+//                return
+//            }
+//
+//            destination.user = UserDefaults[indexPath.row]
+//        }
+//
+//
+//
+//            let storyboard = UIStoryboard(name: "UserDetails", bundle: nil)
+//
+//            guard let viewControllerDestination = storyboard.instantiateInitialViewController() else {
+//                return
+//            }
+//
+//            self.present(viewControllerDestination, animated: true)
+//        }
+//
+//
+
+
     private func configureRefreshControl() {
         // Configure Refresh Control
         refreshControlTableView.addTarget(self,

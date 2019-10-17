@@ -74,11 +74,22 @@
                         <outlet property="collectionView" destination="Xkm-j9-dWd" id="ev6-Tr-3r3"/>
                         <outlet property="segmentOptions" destination="IFr-2A-2Qt" id="EfR-19-HSX"/>
                         <outlet property="tableView" destination="HIK-BB-l9u" id="slc-re-1YT"/>
+                        <segue destination="mzD-ZK-0fj" kind="show" id="BLt-Jy-3YN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="119" y="-481"/>
+        </scene>
+        <!--UserDetails-->
+        <scene sceneID="z1l-J5-HVC">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UserDetails" storyboardName="UserDetails" id="mzD-ZK-0fj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="V5G-FE-zA1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qTv-6v-jen" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="-481"/>
         </scene>
     </scenes>
     <resources>
