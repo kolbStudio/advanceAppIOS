@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ltN-Wz-LPa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wDX-nF-cwa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -7,11 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Details-->
+        <!--UserDetailsViewController-->
         <scene sceneID="8eW-06-yrU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yDs-Rc-Rn2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController modalPresentationStyle="fullScreen" id="wDX-nF-cwa" customClass="UserDetailsViewController" customModule="advanceAppIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="UserDetailsViewController" modalPresentationStyle="fullScreen" id="wDX-nF-cwa" customClass="UserDetailsViewController" customModule="advanceAppIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lqc-t3-dOR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="192" id="jI6-TE-88f">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContactData" rowHeight="192" id="jI6-TE-88f" customClass="ContactData" customModule="advanceAppIOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="192"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jI6-TE-88f" id="Vif-j4-aNJ">
@@ -28,71 +27,63 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="184" id="Y7E-bY-dGr">
-                                        <rect key="frame" x="0.0" y="220" width="414" height="184"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Country" rowHeight="185" id="CRj-mY-f4D" customClass="Country" customModule="advanceAppIOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="220" width="414" height="185"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CRj-mY-f4D" id="pGr-UT-NaI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="185"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Map" rowHeight="184" id="Y7E-bY-dGr" customClass="Map" customModule="advanceAppIOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="405" width="414" height="184"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y7E-bY-dGr" id="9hy-FO-rd1">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="192" id="CRj-mY-f4D">
-                                        <rect key="frame" x="0.0" y="404" width="414" height="192"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CRj-mY-f4D" id="pGr-UT-NaI">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="192"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="192" id="2c3-6P-XTg">
-                                        <rect key="frame" x="0.0" y="596" width="414" height="192"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PersonalData" rowHeight="192" id="2c3-6P-XTg" customClass="PersonalData" customModule="advanceAppIOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="589" width="414" height="192"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2c3-6P-XTg" id="GsO-JW-aUb">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="192"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KN-29-pZ0">
-                                                    <rect key="frame" x="161" y="86" width="93" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
-                                                    <state key="normal" title="Delete"/>
-                                                </button>
-                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkI-eD-5Bj">
+                                <rect key="frame" x="170" y="797" width="74" height="40"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="onActionPressed:" destination="wDX-nF-cwa" eventType="touchUpInside" id="HSA-gc-dbu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="mog-TM-Sei" firstAttribute="leading" secondItem="75t-OR-0fX" secondAttribute="leading" id="CC8-cZ-BzJ"/>
+                            <constraint firstItem="LkI-eD-5Bj" firstAttribute="leading" secondItem="75t-OR-0fX" secondAttribute="leading" constant="170" id="R6D-Ra-bmT"/>
                             <constraint firstItem="mog-TM-Sei" firstAttribute="top" secondItem="75t-OR-0fX" secondAttribute="top" id="Xnr-Zr-Jl9"/>
                             <constraint firstItem="75t-OR-0fX" firstAttribute="trailing" secondItem="mog-TM-Sei" secondAttribute="trailing" id="Yax-ec-aLo"/>
                             <constraint firstItem="75t-OR-0fX" firstAttribute="bottom" secondItem="mog-TM-Sei" secondAttribute="bottom" id="fYg-1s-Smb"/>
+                            <constraint firstItem="75t-OR-0fX" firstAttribute="trailing" secondItem="LkI-eD-5Bj" secondAttribute="trailing" constant="170" id="iuG-BH-BoX"/>
+                            <constraint firstItem="75t-OR-0fX" firstAttribute="bottom" secondItem="LkI-eD-5Bj" secondAttribute="bottom" constant="25" id="yi1-ng-mdG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="75t-OR-0fX"/>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="2wy-g8-nKj">
                         <barButtonItem key="backBarButtonItem" title="Back" id="FIT-oL-w6O"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="mog-TM-Sei" id="hpT-We-Hn2"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDs-Rc-Rn2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="103.79464285714285"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="mxq-WF-9An">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ltN-Wz-LPa" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X1g-tJ-I8c">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zBp-f7-CHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+            <point key="canvasLocation" x="1942.0289855072465" y="103.79464285714285"/>
         </scene>
     </scenes>
 </document>

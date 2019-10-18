@@ -42,36 +42,12 @@ class UsersViewController: UIViewController {
         configure(collectionView: collectionView)
         
         loadOptionSelected()
-//        loadUsers()
-//        prepare()
+        loadUsers()
+        
+        
+        
     }
     
-    
-//        extension func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//            guard let destination = segue.destination as? UserDetailsViewController,
-//                  let cell = sender as? UITableViewCell,
-//                  let indexPath = tableView.indexPath(for: cell)
-//                else {
-//                return
-//            }
-//
-//            destination.user = UserDefaults[indexPath.row]
-//        }
-//
-//
-//
-//            let storyboard = UIStoryboard(name: "UserDetails", bundle: nil)
-//
-//            guard let viewControllerDestination = storyboard.instantiateInitialViewController() else {
-//                return
-//            }
-//
-//            self.present(viewControllerDestination, animated: true)
-//        }
-//
-//
-
-
     private func configureRefreshControl() {
         // Configure Refresh Control
         refreshControlTableView.addTarget(self,
@@ -151,6 +127,7 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.delegate = self
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
     }
@@ -171,6 +148,12 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
+    // Seleccion del Usuario
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "segueUserDetails", sender: indexPath)
+    }
+    
 }
 
 
@@ -191,6 +174,7 @@ extension UsersViewController: UICollectionViewDelegate, UICollectionViewDataSou
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -226,4 +210,22 @@ extension UsersViewController: UICollectionViewDelegate, UICollectionViewDataSou
         return CGSize(width: size,
                       height: size)
     }
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "segueUserDetails", sender: indexPath)
+    }
+    
 }
+// MARK: - Navigation
+extension UsersViewController {
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    guard let destination = segue.destination as? UserDetailsViewController,
+        let indexPath = sender as? IndexPath else {
+            return
+    }
+    destination.user = users[indexPath.row]
+
+}
+                
+}
+    
+

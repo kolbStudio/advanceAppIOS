@@ -6,17 +6,12 @@
 //  Copyright © 2019 kolbStudio. All rights reserved.
 //
 
-import UIKit
-
-
-
-    
 
 import UIKit
 import Kingfisher
 
 class PersonalData: UITableViewCell {
-    static let cellIdentifier = String(describing: PersonTableViewCell.self)
+    static let cellIdentifier = String(describing: PersonalData.self)
 
     @IBOutlet weak var mView: UIView!
     @IBOutlet weak var mImage: UIImageView!

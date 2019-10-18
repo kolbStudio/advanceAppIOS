@@ -6,17 +6,31 @@
 //  Copyright © 2019 kolbStudio. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-//class UserDetailsViewController: UIViewController {
-//    
-//    
-//    // MARK: - IBOutlets
-//    @IBOutlet weak var tableView: UITableView!
-//    @IBOutlet weak var mDeleteButton: UIButton!
-//    
-//    
-//    
-//    
-//}
+enum TablePosition {
+case Map
+case PersonalData
+case Country
+case contactData
+    
+}
+class UserDetailsViewController: UIViewController {
+    // MARK: - IBOutlets
+    @IBOutlet weak var tableView: UITableView!
+    @IBAction func onActionPressed (_ sender:UIButton)  {
+        
+    }
+    
+    var user: User? = nil
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    
+    
+    
+}
 
