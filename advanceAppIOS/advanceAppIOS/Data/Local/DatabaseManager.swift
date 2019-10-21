@@ -68,3 +68,4 @@ extension DatabaseManager {
                                   forKey: KEY_OPTION_SELECTED)
     }
 }
+

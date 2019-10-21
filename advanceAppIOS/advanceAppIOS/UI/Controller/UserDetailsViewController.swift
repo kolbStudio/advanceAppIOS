@@ -8,15 +8,18 @@
 
 import UIKit
 
-enum TablePosition {
-    case contactData
-    case Country
-    case Map
-    case PersonalData
-}
+
 
 class UserDetailsViewController: UIViewController {
     // MARK: - IBOutlets
+    
+    private enum TablePosition: Int {
+        case contactDataCellView
+        case Country
+        case Map
+        case PersonalData
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     @IBAction func onActionPressed (_ sender:UIButton)  {
         let alert = UIAlertController(title: "Eliminar Estudiante", message: "Seguro Quieres eliminar Estudiante?", preferredStyle: .alert)
@@ -25,7 +28,7 @@ class UserDetailsViewController: UIViewController {
               
               alert.addAction(UIAlertAction(title: "Eliminar", style: .destructive, handler: { [weak self] _ in
             
-                  // User.removeAll(where: {$0.name  == self?.User?.name ?? ""})
+              //  DataManager.removeAll(where: {$0.name  == self?.User?.name ?? ""})
                   
                   
               self?.navigationController?.popViewController(animated: true)
@@ -39,7 +42,10 @@ class UserDetailsViewController: UIViewController {
                present(alert, animated: true)
         }
         
-    
+    private let cellTypes = [TablePosition.contactDataCellView,
+                             TablePosition.Country,
+                             TablePosition.Map,
+                             TablePosition.PersonalData]
     
     var user: User? = nil
     
@@ -60,47 +66,60 @@ extension UserDetailsViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        switch indexPath.row {
-        case 0:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: ContactData.cellIdentifier,
-                                                           for: indexPath) as? ContactData else{
+        switch cellTypes[indexPath.row] {
+        case .contactDataCellView:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: ContactDataCellView.cellIdentifier,
+                                                           for: indexPath) as? ContactDataCellView else{
                                                             return UITableViewCell()
             }
             
             cell.configureCell(image: user?.avatar,
                                username: user?.username,
                                email: user?.email,
-                               registerNumber: user?,
+                               salt: user?.salt,
                                gender: user?.gender,
                                cell: user?.cell)
+            
+            cell.selectionStyle = .none
             return cell
             
-        case 1:
+        case .Country:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: Country.cellIdentifier,
-                                                           for: indexPath) as? Country else{
+                                                           for: indexPath) as? Country, let realUser = user else{
                                                             return UITableViewCell()
             }
-            cell.configureCell()
+            
+            cell.configureCell(user: realUser)
+            
+            cell.selectionStyle = .none
             return cell
-        case 2:
+        case .Map:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: Map.cellIdentifier,
                                                            for: indexPath) as? Map else{
                                                             return UITableViewCell()
             }
-            cell.configureCell()
+            cell.configure(latitude: "", longitude: "")
+            
+            cell.selectionStyle = .none
             return cell
-        default:
+        case .PersonalData:
             
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PersonalData.cellIdentifier,
                                                            for: indexPath) as? PersonalData else {
                                                             
                                                             return UITableViewCell()
             }
-            cell.configureCell()
+            cell.configureCell(image: user?.avatar,
+                               name: user?.firstName,
+                               subtitle: user?.email,
+                               birthdate: user?.birthdate)
+            
+            cell.selectionStyle = .none
             
             return cell
             
         }
+        
 }
     
     /// Configure tableView with default options
@@ -116,9 +135,10 @@ extension UserDetailsViewController: UITableViewDelegate, UITableViewDataSource 
         tableView.register(UINib(nibName: Country.cellIdentifier,
                                  bundle: nil),
                            forCellReuseIdentifier: Country.cellIdentifier)
-        tableView.register(UINib(nibName: Country.cellIdentifier,
+        
+        tableView.register(UINib(nibName: ContactDataCellView.cellIdentifier,
                                  bundle: nil),
-                           forCellReuseIdentifier: Country.cellIdentifier)
+                           forCellReuseIdentifier: ContactDataCellView.cellIdentifier)
         
         
         tableView.dataSource = self
@@ -126,9 +146,25 @@ extension UserDetailsViewController: UITableViewDelegate, UITableViewDataSource 
         
     }
     
-    
-    
-    
-    
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        switch indexPath.row {
+        case TablePosition.contactDataCellView.rawValue:
+            return ContactDataCellView.cellHeight
+        case TablePosition.Country.rawValue:
+            return Country.cellHeight
+        case TablePosition.Map.rawValue:
+            return Map.cellHeight
+        case TablePosition.PersonalData.rawValue:
+            return PersonalData.cellHeight
+        default:
+            return 0
+            
+        }
+          
+    }
+   
 }
+
+
+

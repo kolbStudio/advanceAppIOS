@@ -12,6 +12,7 @@ import Kingfisher
 
 class PersonalData: UITableViewCell {
     static let cellIdentifier = String(describing: PersonalData.self)
+    static let cellHeight: CGFloat = 120
 
     @IBOutlet weak var mView: UIView!
     @IBOutlet weak var mImage: UIImageView!

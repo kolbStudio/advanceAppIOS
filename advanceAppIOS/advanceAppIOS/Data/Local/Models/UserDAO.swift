@@ -19,8 +19,18 @@ class UserDAO: Object {
     @objc dynamic var birthdate: Date?
     @objc dynamic var country: String?
     @objc dynamic var nationality: String?
+    @objc dynamic var state: String?
+    @objc dynamic var city: String?
+    @objc dynamic var salt: String?
+    @objc dynamic var username: String?
+    @objc dynamic var postalCode: String?
+    @objc dynamic var cell: String?
     @objc dynamic var latitude: String?
     @objc dynamic var longitude: String?
+    
+    
+ 
+    
     
     override static func primaryKey() -> String? {
         return "uuid"
@@ -36,7 +46,13 @@ class UserDAO: Object {
                      country: String? = nil,
                      nationality: String? = nil,
                      latitude: String? = nil,
-                     longitude: String? = nil) {
+                     longitude: String? = nil,
+                     state: String? = nil,
+                     city: String? = nil,
+                     salt: String? = nil,
+                     username: String? = nil,
+                     postalCode: String? = nil,
+                     cell: String? = nil) {
         self.init()
         
         self.uuid = uuid
@@ -50,5 +66,14 @@ class UserDAO: Object {
         self.nationality = nationality
         self.latitude = latitude
         self.longitude = longitude
+        self.state = state
+        self.city = city
+        self.salt = salt
+        self.username = username
+        self.postalCode = postalCode
+        self.cell = cell
+        
+        
+        
     }
 }

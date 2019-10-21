@@ -14,18 +14,16 @@ import MapKit
 class Map: UITableViewCell {
 
     static let cellIdentifier = String(describing: Map.self)
+    static let cellHeight: CGFloat = 300
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
-    func configureCell(image: String? = nil, name: String? = nil, subtitle: String? = nil, birthdate: Date? = nil) {
+    
+    func configure(latitude: String? = nil, longitude: String? = nil) {
     return
     }
 }

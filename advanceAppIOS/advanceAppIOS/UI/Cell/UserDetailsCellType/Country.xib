@@ -104,12 +104,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="yVn-kJ-xUt"/>
             <connections>
-                <outlet property="mLabelCity" destination="cyx-PD-MJl" id="1pN-sO-top"/>
-                <outlet property="mLabelCountry" destination="48t-Le-yE5" id="AO4-B3-aTv"/>
-                <outlet property="mLabelNationalityEmoji" destination="zEC-Li-IVE" id="0AF-Tf-vfS"/>
-                <outlet property="mLabelPostalCode" destination="lqP-Y5-bOg" id="140-dI-j7B"/>
-                <outlet property="mLabelState" destination="R1N-yz-CJL" id="l5A-U4-nhB"/>
-                <outlet property="mView" destination="Y93-cK-TX5" id="A9s-aH-68C"/>
+                <outlet property="mLabelCity" destination="cyx-PD-MJl" id="aYz-mH-3AA"/>
+                <outlet property="mLabelCountry" destination="48t-Le-yE5" id="JIv-wK-84x"/>
+                <outlet property="mLabelNationalityEmoji" destination="zEC-Li-IVE" id="h4B-Qc-ccR"/>
+                <outlet property="mLabelPostalCode" destination="lqP-Y5-bOg" id="Rme-lS-jXj"/>
+                <outlet property="mLabelState" destination="R1N-yz-CJL" id="67B-Oo-Twe"/>
+                <outlet property="mView" destination="Y93-cK-TX5" id="20Z-N4-pDn"/>
             </connections>
             <point key="canvasLocation" x="205.79710144927537" y="70.3125"/>
         </tableViewCell>

@@ -48,8 +48,8 @@
 		D9ED1C2923576448007F6C6D /* PersonalData.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9ED1C2723576448007F6C6D /* PersonalData.xib */; };
 		D9ED1C2C23576484007F6C6D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED1C2A23576484007F6C6D /* Country.swift */; };
 		D9ED1C2D23576484007F6C6D /* Country.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9ED1C2B23576484007F6C6D /* Country.xib */; };
-		D9ED1C30235764A3007F6C6D /* ContactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED1C2E235764A3007F6C6D /* ContactData.swift */; };
-		D9ED1C31235764A3007F6C6D /* ContactData.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9ED1C2F235764A3007F6C6D /* ContactData.xib */; };
+		D9ED1C30235764A3007F6C6D /* ContactDataCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED1C2E235764A3007F6C6D /* ContactDataCellView.swift */; };
+		D9ED1C31235764A3007F6C6D /* ContactDataCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9ED1C2F235764A3007F6C6D /* ContactDataCellView.xib */; };
 		D9FCEF99234CEE9F00BD6405 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FCEF98234CEE9F00BD6405 /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -99,8 +99,8 @@
 		D9ED1C2723576448007F6C6D /* PersonalData.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalData.xib; sourceTree = "<group>"; };
 		D9ED1C2A23576484007F6C6D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		D9ED1C2B23576484007F6C6D /* Country.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Country.xib; sourceTree = "<group>"; };
-		D9ED1C2E235764A3007F6C6D /* ContactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactData.swift; sourceTree = "<group>"; };
-		D9ED1C2F235764A3007F6C6D /* ContactData.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactData.xib; sourceTree = "<group>"; };
+		D9ED1C2E235764A3007F6C6D /* ContactDataCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDataCellView.swift; sourceTree = "<group>"; };
+		D9ED1C2F235764A3007F6C6D /* ContactDataCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDataCellView.xib; sourceTree = "<group>"; };
 		D9FCEF98234CEE9F00BD6405 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -300,8 +300,8 @@
 				D9ED1C2723576448007F6C6D /* PersonalData.xib */,
 				D9ED1C2A23576484007F6C6D /* Country.swift */,
 				D9ED1C2B23576484007F6C6D /* Country.xib */,
-				D9ED1C2E235764A3007F6C6D /* ContactData.swift */,
-				D9ED1C2F235764A3007F6C6D /* ContactData.xib */,
+				D9ED1C2E235764A3007F6C6D /* ContactDataCellView.swift */,
+				D9ED1C2F235764A3007F6C6D /* ContactDataCellView.xib */,
 			);
 			path = UserDetailsCellType;
 			sourceTree = "<group>";
@@ -386,7 +386,7 @@
 				D92D95C2234662EE00CBE92C /* PersonTableViewCell.xib in Resources */,
 				D9D08BF22346499300F17D4A /* Assets.xcassets in Resources */,
 				D9D08BF02346499100F17D4A /* Main.storyboard in Resources */,
-				D9ED1C31235764A3007F6C6D /* ContactData.xib in Resources */,
+				D9ED1C31235764A3007F6C6D /* ContactDataCellView.xib in Resources */,
 				D92D95CD234667BC00CBE92C /* PersonCollectionViewCell.xib in Resources */,
 				D9BADE0D234E543600238196 /* users.json in Resources */,
 				D9ED1C1C23575D80007F6C6D /* UserDetails.storyboard in Resources */,
@@ -461,7 +461,7 @@
 				D9ED1C242357616B007F6C6D /* Map.swift in Sources */,
 				D9B1E7D92347C26D003BDE55 /* UserDTO.swift in Sources */,
 				D99BBEE4234B835B00556BD6 /* TimezoneDTO.swift in Sources */,
-				D9ED1C30235764A3007F6C6D /* ContactData.swift in Sources */,
+				D9ED1C30235764A3007F6C6D /* ContactDataCellView.swift in Sources */,
 				D9B1E7EB2347CC7C003BDE55 /* DataManager.swift in Sources */,
 				D9D08BEB2346499000F17D4A /* SceneDelegate.swift in Sources */,
 				D9B1E7E12347C71F003BDE55 /* LoginDTO.swift in Sources */,

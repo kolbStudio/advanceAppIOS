@@ -1,5 +1,5 @@
 //
-//  ContactData.swift
+//  ContactDataCellView.swift
 //  advanceAppIOS
 //
 //  Created by Dev2 on 16/10/2019.
@@ -17,15 +17,17 @@ enum SelectedButtonTag: Int {
     case mCellButton
 }
 
-class ContactData: UITableViewCell {
+class ContactDataCellView: UITableViewCell {
     
-    static let cellIdentifier = String(describing: ContactData.self)
+    static let cellIdentifier = String(describing: ContactDataCellView.self)
+    static let cellHeight: CGFloat = 120
+    
     
     @IBOutlet weak var mView: UIView!
     @IBOutlet weak var mImage: UIImageView!
     @IBOutlet weak var mLabelUserName: UILabel!
     @IBOutlet weak var mLabelEmail: UILabel!
-    @IBOutlet weak var mLabelRegisterNumber: UILabel!
+    @IBOutlet weak var mLabelSalt: UILabel!
     @IBOutlet weak var mLabelGender: UILabel!
     @IBOutlet weak var mLabelCell: UILabel!
     
@@ -33,12 +35,16 @@ class ContactData: UITableViewCell {
         switch sender.tag {
         case SelectedButtonTag.mEmailButton.rawValue:
             print("\(String(describing: mLabelEmail.text ?? "")) ")
+            
         case SelectedButtonTag.mRegisterNumberButton.rawValue:
-            print("\(String(describing: mLabelRegisterNumber.text ?? ""))")
+            print("\(String(describing: mLabelSalt.text ?? ""))")
+            
         case SelectedButtonTag.mGenderButton.rawValue:
             print("\(String(describing: mLabelGender.text ?? ""))")
+            
         case SelectedButtonTag.mCellButton.rawValue:
             print("\(String(describing: mLabelCell.text ?? ""))")
+            
         default:
             return print("default")
         }
@@ -48,7 +54,7 @@ class ContactData: UITableViewCell {
         mImage.image = nil
         mLabelUserName.text = nil
         mLabelEmail.text = nil
-        mLabelRegisterNumber.text = nil
+        mLabelSalt.text = nil
         mLabelGender.text = nil
         mLabelCell.text = nil
     }
@@ -59,15 +65,11 @@ class ContactData: UITableViewCell {
 
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
+    
     func configureCell(image: String? = nil,
                        username: String? = nil,
                        email: String? = nil,
-                       registerNumber: String? = nil,
+                       salt: String? = nil,
                        gender: String? = nil,
                        cell: String? = nil) {
         if let url = URL(string: image ?? "") {
@@ -76,7 +78,7 @@ class ContactData: UITableViewCell {
         
         mLabelUserName.text = username
         mLabelEmail.text = email
-        mLabelRegisterNumber.text = registerNumber
+        mLabelSalt.text = salt
         mLabelGender.text = gender
         mLabelCell.text = cell
     }

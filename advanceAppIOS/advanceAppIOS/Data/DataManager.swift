@@ -60,6 +60,10 @@ class DataManager {
     func save(optionSelected: Int) {
         DatabaseManager.shared.save(option: optionSelected)
     }
+    
+//    func delete(optionSelected: Int) {
+//        DatabaseManager.shared.delete(user: UsersDTO)
+//    }
 
         
     // MARK: - Private methods
@@ -137,7 +141,12 @@ class DataManager {
                              country: user.location?.country,
                              nationality: user.nat,
                              latitude: user.location?.coordinates?.latitude,
-                             longitude: user.location?.coordinates?.longitude)
+                             longitude: user.location?.coordinates?.longitude,
+                             state: user.location?.state,
+                             city: user.location?.city,
+                             salt: user.login?.salt,
+                             username: user.login?.userName,
+                             postalCode: user.cell)
         
         DatabaseManager.shared.save(user: userDB)
     }
@@ -156,6 +165,14 @@ class DataManager {
                     email: userDAO.email,
                     birthdate: userDAO.birthdate,
                     country: userDAO.country,
-                    nationality: userDAO.nationality)
+                    nationality: userDAO.nationality,
+                    username: userDAO.city,
+                    gender: userDAO.cell,
+                    postalCode: userDAO.latitude,
+                    city: userDAO.longitude,
+                    salt: userDAO.salt,
+                    state: userDAO.state)
     }
+    
+    
 }

@@ -17,6 +17,7 @@ enum SelectedButtonsTag: Int {
 
 class Country: UITableViewCell {
     static let cellIdentifier = String(describing: Country.self)
+    static let cellHeight: CGFloat = 200
 
     @IBOutlet weak var mView: UIView!
     @IBOutlet weak var mLabelNationalityEmoji: UILabel!
@@ -54,24 +55,19 @@ class Country: UITableViewCell {
     }
     
     
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
-    func configureCell(nationality: String? = nil,
-                       country: String? = nil,
-                       state: String? = nil,
-                       city: String? = nil,
-                       postalCode: String? = nil) {
+    
+    
+    
+    func configureCell(user: User) {
         
-        mLabelNationalityEmoji.text = nationality
-        mLabelCountry.text = country
-        mLabelState.text = state
-        mLabelCity.text = city
-        mLabelPostalCode.text = postalCode
+        mLabelNationalityEmoji.text = user.flag
+        mLabelCountry.text = user.country
+        mLabelState.text = user.state
+        mLabelCity.text = user.city
+        mLabelPostalCode.text = user.postalCode
+        
+        
+        
     }
-    
 }
