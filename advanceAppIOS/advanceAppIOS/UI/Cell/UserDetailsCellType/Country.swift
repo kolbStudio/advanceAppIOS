@@ -8,22 +8,39 @@
 
 import UIKit
 
+enum SelectedButtonsTag: Int {
+    case mStateButton = 0
+    case mCityButton
+    case mPostalCodeButton
+    
+}
+
 class Country: UITableViewCell {
-    static let cellIdentifier = String(describing: PersonalData.self)
+    static let cellIdentifier = String(describing: Country.self)
 
     @IBOutlet weak var mView: UIView!
-    @IBOutlet weak var mImage: UIImageView!
+    @IBOutlet weak var mLabelNationalityEmoji: UILabel!
     @IBOutlet weak var mLabelCountry: UILabel!
     @IBOutlet weak var mLabelState: UILabel!
     @IBOutlet weak var mLabelCity: UILabel!
     @IBOutlet weak var mLabelPostalCode: UILabel!
     
-    @IBOutlet weak var mStateButton: UIButton!
-    @IBOutlet weak var mCityButton: UIButton!
-    @IBOutlet weak var mPostalCodeButton: UIButton!
-
+    @IBAction func onActionPressed (_ sender:UIButton)  {
+        switch sender.tag {
+        case SelectedButtonsTag.mStateButton.rawValue:
+            print("\(String(describing: mLabelState.text ?? "")) ")
+        case SelectedButtonsTag.mCityButton.rawValue:
+            print("\(String(describing: mLabelCity.text ?? ""))")
+        case SelectedButtonsTag.mPostalCodeButton.rawValue:
+            print("\(String(describing: mLabelPostalCode.text ?? ""))")
+        default:
+            return print("default")
+        }
+    }
+    
+    
     override func prepareForReuse() {
-        mImage.image = nil
+        mLabelNationalityEmoji.text = nil
         mLabelCountry.text = nil
         mLabelState.text = nil
         mLabelCity.text = nil
@@ -42,6 +59,19 @@ class Country: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configureCell(nationality: String? = nil,
+                       country: String? = nil,
+                       state: String? = nil,
+                       city: String? = nil,
+                       postalCode: String? = nil) {
+        
+        mLabelNationalityEmoji.text = nationality
+        mLabelCountry.text = country
+        mLabelState.text = state
+        mLabelCity.text = city
+        mLabelPostalCode.text = postalCode
     }
     
 }

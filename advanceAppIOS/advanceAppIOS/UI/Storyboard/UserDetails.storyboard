@@ -54,7 +54,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkI-eD-5Bj">
-                                <rect key="frame" x="170" y="797" width="74" height="40"/>
+                                <rect key="frame" x="140" y="792" width="134" height="40"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
                                 <state key="normal" title="Delete"/>
                                 <connections>
@@ -65,12 +65,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="mog-TM-Sei" firstAttribute="leading" secondItem="75t-OR-0fX" secondAttribute="leading" id="CC8-cZ-BzJ"/>
-                            <constraint firstItem="LkI-eD-5Bj" firstAttribute="leading" secondItem="75t-OR-0fX" secondAttribute="leading" constant="170" id="R6D-Ra-bmT"/>
+                            <constraint firstItem="75t-OR-0fX" firstAttribute="bottom" secondItem="LkI-eD-5Bj" secondAttribute="bottom" constant="30" id="W9s-Rd-gZR"/>
                             <constraint firstItem="mog-TM-Sei" firstAttribute="top" secondItem="75t-OR-0fX" secondAttribute="top" id="Xnr-Zr-Jl9"/>
+                            <constraint firstItem="75t-OR-0fX" firstAttribute="trailing" secondItem="LkI-eD-5Bj" secondAttribute="trailing" constant="140" id="Y69-mw-APA"/>
                             <constraint firstItem="75t-OR-0fX" firstAttribute="trailing" secondItem="mog-TM-Sei" secondAttribute="trailing" id="Yax-ec-aLo"/>
                             <constraint firstItem="75t-OR-0fX" firstAttribute="bottom" secondItem="mog-TM-Sei" secondAttribute="bottom" id="fYg-1s-Smb"/>
-                            <constraint firstItem="75t-OR-0fX" firstAttribute="trailing" secondItem="LkI-eD-5Bj" secondAttribute="trailing" constant="170" id="iuG-BH-BoX"/>
-                            <constraint firstItem="75t-OR-0fX" firstAttribute="bottom" secondItem="LkI-eD-5Bj" secondAttribute="bottom" constant="25" id="yi1-ng-mdG"/>
+                            <constraint firstItem="LkI-eD-5Bj" firstAttribute="leading" secondItem="75t-OR-0fX" secondAttribute="leading" constant="140" id="hvm-a4-h5M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="75t-OR-0fX"/>
                     </view>

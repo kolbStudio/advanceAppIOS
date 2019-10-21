@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import MapKit
+
 
 
 class Map: UITableViewCell {
 
+    static let cellIdentifier = String(describing: Map.self)
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,4 +25,7 @@ class Map: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configureCell(image: String? = nil, name: String? = nil, subtitle: String? = nil, birthdate: Date? = nil) {
+    return
+    }
 }

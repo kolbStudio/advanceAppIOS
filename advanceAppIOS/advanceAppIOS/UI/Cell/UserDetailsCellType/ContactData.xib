@@ -33,17 +33,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="0m6-dP-wUe">
-                                <rect key="frame" x="71" y="111.5" width="240" height="48.5"/>
+                                <rect key="frame" x="94" y="111.5" width="194" height="48.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="r13-8c-QeI">
-                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="48.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="20.5" height="48.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpx-uU-9gm">
-                                                <rect key="frame" x="0.0" y="0.0" width="66.5" height="30.5"/>
-                                                <state key="normal" image="envelope" catalog="system"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="20.5" height="30.5"/>
+                                                <state key="normal" image="envelope.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="onActionPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bc3-OC-7w8"/>
+                                                </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hgfjghfazgxjhagsx" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPg-Vc-9fD">
-                                                <rect key="frame" x="0.0" y="32.5" width="66.5" height="16"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPg-Vc-9fD">
+                                                <rect key="frame" x="0.0" y="32.5" width="20.5" height="16"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="10"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -51,12 +54,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gfc-C4-xce">
-                                        <rect key="frame" x="88.5" y="0.0" width="60" height="48.5"/>
+                                        <rect key="frame" x="42.5" y="0.0" width="60" height="48.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKE-yU-zru">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKE-yU-zru">
                                                 <rect key="frame" x="20" y="0.0" width="20" height="32.5"/>
                                                 <state key="normal" image="grid.circle" catalog="system"/>
                                                 <state key="disabled" image="grid.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="onActionPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0IJ-my-tXt"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RegisterNumber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8k-1c-bom">
                                                 <rect key="frame" x="0.0" y="32.5" width="60" height="16"/>
@@ -67,12 +73,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="jU0-g7-pEU">
-                                        <rect key="frame" x="170.5" y="0.0" width="27.5" height="48.5"/>
+                                        <rect key="frame" x="124.5" y="0.0" width="27.5" height="48.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehq-kS-F6s">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehq-kS-F6s">
                                                 <rect key="frame" x="4" y="0.0" width="20" height="30.5"/>
-                                                <state key="normal" image="person.crop.square" catalog="system"/>
+                                                <state key="normal" image="person.circle" catalog="system"/>
                                                 <state key="disabled" image="person.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="onActionPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="K7r-z5-Y7j"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBi-Ht-bYB">
                                                 <rect key="frame" x="0.0" y="32.5" width="27.5" height="16"/>
@@ -83,11 +92,14 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bCI-jf-2g8">
-                                        <rect key="frame" x="220" y="0.0" width="20" height="48.5"/>
+                                        <rect key="frame" x="174" y="0.0" width="20" height="48.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CV2-Un-z5t">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CV2-Un-z5t">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="30.5"/>
                                                 <state key="normal" image="phone.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="onActionPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="f1x-d0-eC5"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObH-h0-LMF">
                                                 <rect key="frame" x="3.5" y="32.5" width="13.5" height="16"/>
@@ -110,14 +122,22 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mImage" destination="fGN-YH-LoM" id="HbB-Gt-PAe"/>
+                <outlet property="mLabelCell" destination="ObH-h0-LMF" id="1Uk-Cu-zvL"/>
+                <outlet property="mLabelEmail" destination="aPg-Vc-9fD" id="Aex-ez-WhC"/>
+                <outlet property="mLabelGender" destination="tBi-Ht-bYB" id="hht-ID-ukm"/>
+                <outlet property="mLabelRegisterNumber" destination="Z8k-1c-bom" id="XKn-oX-tGG"/>
+                <outlet property="mLabelUserName" destination="3et-NQ-qcn" id="iF7-Ib-lPd"/>
+                <outlet property="mView" destination="iy9-RQ-H0n" id="xRe-U5-XgY"/>
+            </connections>
             <point key="canvasLocation" x="-810" y="-272"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="envelope" catalog="system" width="64" height="46"/>
+        <image name="envelope.circle" catalog="system" width="64" height="62"/>
         <image name="grid.circle" catalog="system" width="64" height="62"/>
         <image name="person.circle" catalog="system" width="64" height="62"/>
-        <image name="person.crop.square" catalog="system" width="64" height="56"/>
         <image name="phone.circle" catalog="system" width="64" height="62"/>
     </resources>
 </document>

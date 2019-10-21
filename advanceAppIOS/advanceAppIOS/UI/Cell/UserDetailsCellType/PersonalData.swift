@@ -37,6 +37,8 @@ class PersonalData: UITableViewCell {
         
         mView.layer.cornerRadius = 8.0
         mView.configureShadows()
+        
+        
     }
     
     func configureCell(image: String? = nil, name: String? = nil, subtitle: String? = nil, birthdate: Date? = nil) {
